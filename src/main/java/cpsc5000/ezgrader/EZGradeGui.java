@@ -107,33 +107,18 @@ public class EZGradeGui extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-       
+
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         DefaultTableModel model = (DefaultTableModel) this.jTable1.getModel(); //Creates a Default Table Model, this allows the table to be populated dynamically
         boolean validInput = false;
-        
+
         //Loop to ensure that the user has entered an integer, if not they must enter a different value
-        
-        String numberToCalculateRaw = this.jTextField1.getText();  //Pulls in the data from the text field and stores it to string variable 
-                    
-//        if (numberToCalculateRaw.matches ("^[1-9]\\d*$"))  //Reg-ex for int
-//        {
-//            int numberToCalculate = Integer.parseInt(this.jTextField1.getText()); //Changes the string into an int
-//            GradeCalculator calculator = new GradeCalculator(numberToCalculate);  //Instantiates the GradeCalculator class
-//            model.setDataVector(calculator.getGradeArray(), new String [] { "Wrong", "Grade", "Right"});    //Sets the columns and rows in the data table
-//            validInput = true;
-//        }
-//
-//        else 
-//        {
-//            JOptionPane.showMessageDialog(null, "Please enter a positive number that is great than 0.");
-//            this.jTextField1.setText(""); //Empties the text box
-//        }
-        
-        try  
+
+        String numberToCalculateRaw = this.jTextField1.getText();  //Pulls in the data from the text field and stores it to string variable
+        try
         {
             int numberToCalculate = Integer.parseInt(this.jTextField1.getText()); //Changes the string into an int
             if (numberToCalculate < 0)
@@ -162,7 +147,7 @@ public class EZGradeGui extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
