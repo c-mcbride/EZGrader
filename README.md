@@ -15,7 +15,7 @@ java -version
 If you do not have Java installed, or if your version is older than 17, you can download the latest version of Java from Oracle's official website or by clicking [here](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
 
 ## Download the Application
-- Go to the [Releases](https://github.com/your-github-username/your-repo-name/releases)
+- Go to the [Releases](https://github.com/c-mcbride/EZGrader/releases/tag/v1.0)
 - Download the `EZGrader-1.0-SNAPSHOT-jar-with-dependencies.jar` file from the latest release.
 
 ## Run the Application
